@@ -10,6 +10,13 @@ This is a cheat sheet for "Bourne-again shell" (bash) and GNU/Linux commands.
 tail -n +2 filename.txt
 ```
 
+### Quick parsing of a file using awk syntax
+
+```
+awk -F "\t" '{print;}' knownGene.txt
+```
+
+
 ## Compressing and decompressing files
 
 ### Create a gzipped tarball from a `*` glob command
