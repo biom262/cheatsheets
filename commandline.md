@@ -25,7 +25,9 @@ END {print tot;}' <file>
 
 ``` 
 less <filename>
+```
 or
+```
 more <filename>
 ```
 
