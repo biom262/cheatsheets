@@ -24,3 +24,7 @@ The final command looks like this:
 ```
 findMotifsGenome.pl peaks.bed out_dir hg19 -bg background.bed -rna -len 4,5,6,7 -mset vertebrates -mis 1 -p 4
 ```
+
+cd ./filename --> moves directory
+ls -> looks for what is in current directory
+pwd -> displays current directory
