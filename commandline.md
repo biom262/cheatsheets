@@ -17,7 +17,7 @@ awk -F "\t" '{
 if (FNR==1){
     next
 };
-tot = tot + $5 + $4 # <declare variables here>
+tot = tot + $5 + $4  # declare variables here
 END {print tot;}' <file> 
 ```
 
