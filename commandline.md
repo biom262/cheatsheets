@@ -10,6 +10,12 @@ This is a cheat sheet for "Bourne-again shell" (bash) and GNU/Linux commands.
 tail -n +2 filename.txt
 ```
 
+### View first 5 lines of a file
+
+```
+head -5 filename.txt
+```
+
 ### Omit first line of file from AWK processing 
 
 ```
