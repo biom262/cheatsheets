@@ -119,3 +119,12 @@ To install a program from source on a shared cluster, you will often need to spe
 ./configure --prefix=/projects/ps-yeolab/software
 make && make install   # "make install" will run only if "make" is successful
 ```
+
+## Using Git
+
+### Git Cheatsheet
+
+```
+http://swcarpentry.github.io/git-novice/reference.html
+```
+
