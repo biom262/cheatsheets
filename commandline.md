@@ -3,7 +3,18 @@
 This is a cheat sheet for "Bourne-again shell" (bash) and GNU/Linux commands.
 
 ## Text maninpulation
-
+## Extracting specific columns (fill in delimeter and column to cut)
+````
+cut -d? -f?
+````
+###Count the number of lines
+````
+wc -1
+````
+### Create an empty file
+```
+touch filename
+```
 ### Skip the first line of a file
 
 ```
