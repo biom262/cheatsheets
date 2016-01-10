@@ -1,7 +1,7 @@
 # Bioinformatics
 
 This is a cheat sheet for bioinformatics command line programs.
-
+#git init can be used to make a repository-isn't that great!
 ## HOMER motif finding
 
 Use [HOMER](http://homer.salk.edu/homer/ngs/peakMotifs.html) for finding motifs in the genome given bed files.
