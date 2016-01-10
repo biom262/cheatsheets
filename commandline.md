@@ -7,6 +7,10 @@ This is a cheat sheet for "Bourne-again shell" (bash) and GNU/Linux commands.
 ````
 cut -d? -f?
 ````
+###Count the number of lines
+````
+wc -1
+````
 ### Skip the first line of a file
 
 ```
