@@ -11,6 +11,10 @@ cut -d? -f?
 ````
 wc -1
 ````
+### Create an empty file
+```
+touch filename
+```
 ### Skip the first line of a file
 
 ```
