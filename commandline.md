@@ -10,6 +10,33 @@ This is a cheat sheet for "Bourne-again shell" (bash) and GNU/Linux commands.
 tail -n +2 filename.txt
 ```
 
+### View first 5 lines of a file
+
+```
+head -5 filename.txt
+```
+
+### Omit first line of file from AWK processing 
+
+```
+awk -F "\t" '{
+if (FNR==1){
+    next
+};
+tot = tot + $5 + $4  # declare variables here
+END {print tot;}' <file> 
+```
+
+### View files without loading full file (like with vim)
+
+``` 
+less <filename>
+```
+or
+```
+more <filename>
+```
+
 ## Compressing and decompressing files
 
 ### Create a gzipped tarball from a `*` glob command
@@ -92,3 +119,12 @@ To install a program from source on a shared cluster, you will often need to spe
 ./configure --prefix=/projects/ps-yeolab/software
 make && make install   # "make install" will run only if "make" is successful
 ```
+
+## Using Git
+
+### Git Cheatsheet
+
+```
+http://swcarpentry.github.io/git-novice/reference.html
+```
+
