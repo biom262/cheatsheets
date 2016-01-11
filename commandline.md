@@ -94,3 +94,4 @@ make && make install   # "make install" will run only if "make" is successful
 ``
 
 Awk lets you do a lot of things
+awk 'pattern{action}' file
