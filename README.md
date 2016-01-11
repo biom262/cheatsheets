@@ -1,1 +1,5 @@
-git and github instructions http://nbviewer.ipython.org/github/biom262/biom262-2016/blob/master/weeks/week01/3_gitgoing.ipynb
+# cheatsheets
+
+Quick lookup documents for commmonly used tools.
+
+## list of commonly used tools
