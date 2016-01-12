@@ -1,0 +1,2 @@
+emacs - screen-oriented text editor
+vim - full-screen text editor
