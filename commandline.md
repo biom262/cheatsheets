@@ -92,3 +92,14 @@ To install a program from source on a shared cluster, you will often need to spe
 ./configure --prefix=/projects/ps-yeolab/software
 make && make install   # "make install" will run only if "make" is successful
 ```
+
+
+### .bashrc
+
+This is where you put all of the stuff you want to execute, load, echo, etc when you login to TSCC!
+
+```
+nano ~/.bashrc
+```
+
+add your code here!
