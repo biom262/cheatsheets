@@ -24,3 +24,6 @@ The final command looks like this:
 ```
 findMotifsGenome.pl peaks.bed out_dir hg19 -bg background.bed -rna -len 4,5,6,7 -mset vertebrates -mis 1 -p 4
 ```
+My new note: git checkout checks out (i.e., restores) an old version of a file
+
+

@@ -1,0 +1,21 @@
+pwd: present working directory
+~ : home directory
+cd: change directory
+ls: list directory contents (files)
+man: manual for whatever command you specify
+mkdir: make directory
+cd ..: change back to home directory
+touch file.txt: creat an empty file called "text"
+cat: look at file's contents
+echo "example" >> file. text: this will append "example" into the file "text"
+wc: line count
+mv: move (must specify origin and destination after)
+cp: copy (must specify origin and destination after)
+scp: secure copy
+chmod: permissions
+awk: extract lines based on desired specifications you input
+git init: makes a directory a git repo
+git add: tells git to start keeping track of something
+git commit -m: tells git to record your changes
+git diff: shows changes so you can review them
+
