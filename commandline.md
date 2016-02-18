@@ -12,7 +12,7 @@ This is a cheat sheet for "Bourne-again shell" (bash) and GNU/Linux commands.
 	more				Contents shows up below printed to terminal
 	less				bring up the document, but remove it from the screen and terminal on Q
 	cat				can view (print to terminal) can also pipe data to other things, concatenate vertically
-	>				Output to a file (can replace the file if it already exists)
+	>				Output to a file (can replace the file if it already exists) Called "redirecting"
 	>> 				append to existing file (does not replace existing file, only appends)
 	mv				Cut and Paste (copy but remove source)
 	cp				copy (retain source)
@@ -20,14 +20,48 @@ This is a cheat sheet for "Bourne-again shell" (bash) and GNU/Linux commands.
 	which 				find the path to the object specified
 	ls -lhaH			human-readable sizes, permissions, groups, and symbolic links displaying fullpaths
 	qstat -r hotel | less		Show all jobs on the node “hotel”
-	qstat -u ucsd-train03	show job status list for the user “ucsd-train03”
-	qsub script.sh		submit script (which has PBS flags) to the queue
-
+	qstat -u ucsd-train03		show job status list for the user “ucsd-train03”
+	qsub script.sh			submit script (which has PBS flags) to the queue
+	tee				Write to something and submit it to a program (see manual)
+	who				On TSCC this lists all of the logged in users and their IP addresses
+	pwd -P				Print physical directory "what drive am I on?"
+	top				What jobs are running?
+	screen				See: https://kb.iu.edu/d/acuy
 ```
+## How basic program inputs and outputs work:
+Standard in
+to
+#####Program
+outputs two outputs
+###### 1) Standard out (stdout)
+###### 2) Standard Error (stderr)
+
+You can redirect either or both E.G. ```grep NFKB tfs.bed 1>tfs.nfkb.bed 2>tfs.nfkb.err```
+
+If you don't specify the stream that you want it will just redirect the standard out and alternatively print the standard error output to the command line (E.G. grep:tfs.bed: No such file or directory).
+
+###Advanced:
+On TSCC if you write  
+2>&1
+as the last line, you will cat your standard error and out files to standard out
+
+#TSCC
+when you are in your home directory on the login node, you are writing to the login node, the login node has very little available ram per user (5 login nodes * 64GB /#Users)
+
+when you are in your scratch directory, you are writing to the scratch directory
+
+when you submit to qsub, you are assigned a host machine based on your request (#PBS scripts) for processors, memory, etc. AT THE MOMENT YOU MAKE THE REQUEST. If other tasks go out of control and start taking up more memory it can fuck things up quickly for everyone on that host.
+
+If you disconnect from the login node while writing to Scratch, it cuts off whatever you are currently writing and leaves a corrupted file.  USING THE HEAD NODE IS RISKY. If they want to install an update and bring down your login node, you're boned. If you've submitted your stuff as a job you are far more protected.
 
 
 ## Text maninpulation
-
+### Navgiation 
+```
+Control + E 		Jump to end of the line
+Control + A		Jump to start of the line
+Alt + ErrorKeys		Jump between words on the same line
+```
 ## Skip the first line of a file
 
 ```
@@ -118,17 +152,53 @@ To install a program from source on a shared cluster, you will often need to spe
 make && make install   # "make install" will run only if "make" is successful
 ```
 
+### Screens
+Always use the same login node!
+```
+screen -S try1
+```
+[detached]
+
+```
+screen -S try2
+```
+[detached]
+
+```
+screen -x
+```
+There are several suitable screens on:
+	40357.try1	(Detached)
+	40451.try2	(Detached)
+
+Type 
+```
+screen [-d] -r [pid.]tty.host" 
+```
+to resume one of them.
+```
+screen -x 40357.try
+```
+[screen is terminating]
+
+```
+screen -x
+```
+[screen is terminating]
+
 
 ### .bashrc
 
-####This is where you put all of the stuff you want to execute, load, echo, etc when you login to TSCC!
+#####This is where you put all of the stuff you want to execute, load, echo, etc when you login to TSCC!
 
 ```
 nano ~/.bashrc
 ```
-#### On your local machine:
+##### On your local machine:
 ```
 nano ~/.bash_preferences
 ```
+##### For using "screens"
+```nano ~/.screenrc
 
 add your code here!
