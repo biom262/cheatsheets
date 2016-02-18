@@ -3,30 +3,37 @@
 This is a cheat sheet for "Bourne-again shell" (bash) and GNU/Linux commands.
 ## The basics:
 ```
-	cd ~ 				go to home directory
-	clear				clear terminal
-	source				reload this file
-	mkdir				make directory
-	rm -rf				Remove recursively and force
-	chmod ###			777 is the most generous, order:  user, group, everyone
-	more				Contents shows up below printed to terminal
-	less				bring up the document, but remove it from the screen and terminal on Q
-	cat				can view (print to terminal) can also pipe data to other things, concatenate vertically
-	>				Output to a file (can replace the file if it already exists) Called "redirecting"
-	>> 				append to existing file (does not replace existing file, only appends)
-	mv				Cut and Paste (copy but remove source)
-	cp				copy (retain source)
-	ln -s				soft links	Source Destination
-	which 				find the path to the object specified
-	ls -lhaH			human-readable sizes, permissions, groups, and symbolic links displaying fullpaths
-	qstat -r hotel | less		Show all jobs on the node “hotel”
-	qstat -u ucsd-train03		show job status list for the user “ucsd-train03”
-	qsub script.sh			submit script (which has PBS flags) to the queue
-	tee				Write to something and submit it to a program (see manual)
-	who				On TSCC this lists all of the logged in users and their IP addresses
-	pwd -P				Print physical directory "what drive am I on?"
+	cd ~ 					go to home directory
+	clear					clear terminal
+	source					reload this file
+	mkdir					make directory
+	rm -rf					Remove recursively and force
+	chmod ###				777 is the most generous, order:  user, group, everyone
+	more					Contents shows up below printed to terminal
+	less					bring up the document, but remove it from the screen and terminal on Q
+	cat					can view (print to terminal) can also pipe data to other things, concatenate vertically
+	>					Output to a file (can replace the file if it already exists) Called "redirecting"
+	>> 					append to existing file (does not replace existing file, only appends)
+	mv					Cut and Paste (copy but remove source)
+	cp					copy (retain source)
+	ln -s					soft links	Source Destination
+	which 					find the path to the object specified
+	ls -lhaH				human-readable sizes, permissions, groups, and symbolic links displaying fullpaths
+	qstat -r hotel | less			Show all jobs on the node “hotel”
+	qstat -u ucsd-train03			show job status list for the user “ucsd-train03”
+	qsub script.sh				submit script (which has PBS flags) to the queue
+	tee					Write to something and submit it to a program (see manual)
+	who					On TSCC this lists all of the logged in users and their IP addresses
+	pwd -P					Print physical directory "what drive am I on?"
 	top				What jobs are running?
 	screen				See: https://kb.iu.edu/d/acuy
+	git ls-files			Which files are managed by git
+	git ls-files -u			Which files are unmerged or have conflicts
+	git log				show all commits that have happened with these files (use to find commit hash if you want to reset)
+	git reset (hash)		reset to certain commit (find hash with git log)
+	git checkout --ours		use everything that is yours when you merge
+	git checkout --theirs		use everything that is theirs when you merge
+	
 ```
 ## How basic program inputs and outputs work:
 Standard in
