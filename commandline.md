@@ -208,4 +208,15 @@ nano ~/.bash_preferences
 ##### For using "screens"
 ```nano ~/.screenrc
 
-add your code here!
+
+### Installing biotools
+```mothership:~ mbaughn$ pip install biotools
+Collecting biotools
+  Downloading biotools-1.2.12.tar.gz
+Building wheels for collected packages: biotools
+  Running setup.py bdist_wheel for biotools ... done
+  Stored in directory: /Users/mbaughn/Library/Caches/pip/wheels/86/0e/ec/57f244b7a14c7847b55636f1900206b5039b38828372cafd87
+Successfully built biotools
+Installing collected packages: biotools
+Successfully installed biotools-1.2.12
+```
