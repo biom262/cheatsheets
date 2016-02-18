@@ -5,7 +5,7 @@ This is a cheat sheet for "Bourne-again shell" (bash) and GNU/Linux commands.
 ```
 	cd ~ 				go to home directory
 	clear				clear terminal
-	source			reload this file
+	source				reload this file
 	mkdir				make directory
 	rm -rf				Remove recursively and force
 	chmod ###			777 is the most generous, order:  user, group, everyone
