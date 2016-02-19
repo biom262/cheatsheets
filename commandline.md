@@ -19,6 +19,7 @@ This is a cheat sheet for "Bourne-again shell" (bash) and GNU/Linux commands.
 	mv					Cut and Paste (copy but remove source)
 	cp					copy (retain source)
 	tree -f					prints out a directory structure tree (stop doing cd ls recursively!) -f option prints full paths on every branch
+	du -ch					display disk use (-c sum all subfolders) (-h make human readable)
 	ln -s					soft links	Source Destination
 	which 					find the path to the object specified
 	ls -lhaH				human-readable sizes, permissions, groups, and symbolic links displaying fullpaths
