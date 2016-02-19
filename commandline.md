@@ -18,6 +18,7 @@ This is a cheat sheet for "Bourne-again shell" (bash) and GNU/Linux commands.
 	>> 					append to existing file (does not replace existing file, only appends)
 	mv					Cut and Paste (copy but remove source)
 	cp					copy (retain source)
+	tree					prints out a directory structure tree (stop doing cd ls recursively!)
 	ln -s					soft links	Source Destination
 	which 					find the path to the object specified
 	ls -lhaH				human-readable sizes, permissions, groups, and symbolic links displaying fullpaths
