@@ -1,3 +1,5 @@
+http://www.emoji-cheat-sheet.com/
+
 # Command line cheatsheet
 
 This is a cheat sheet for "Bourne-again shell" (bash) and GNU/Linux commands.
