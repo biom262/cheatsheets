@@ -22,7 +22,7 @@ This is a cheat sheet for "Bourne-again shell" (bash) and GNU/Linux commands.
 	ln -s					soft links	Source Destination
 	which 					find the path to the object specified
 	ls -lhaH				human-readable sizes, permissions, groups, and symbolic links displaying fullpaths
-	qstat -r hotel | less			Show all jobs on the node “hotel”
+	qstat -r hotel | less			Show all jobs on the group “hotel”
 	qstat -u ucsd-train03			show job status list for the user “ucsd-train03”
 	qsub script.sh				submit script (which has PBS flags) to the queue
 	tee					Write to something and submit it to a program (see manual)
