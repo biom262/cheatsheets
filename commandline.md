@@ -224,3 +224,8 @@ Successfully built biotools
 Installing collected packages: biotools
 Successfully installed biotools-1.2.12
 ```
+
+##### Windows Firewall -- Block an Individual IP Address:
+```
+netsh advfirewall firewall add rule name="Intuit1" dir=out interface=any action=block remoteip=75.98.51.173
+```
