@@ -201,20 +201,22 @@ screen -x
 ### .bashrc
 
 #####This is where you put all of the stuff you want to execute, load, echo, etc when you login to TSCC!
-
 ```
 nano ~/.bashrc
 ```
+
 ##### On your local machine:
 ```
 nano ~/.bash_preferences
 ```
 ##### For using "screens"
-```nano ~/.screenrc
-
+```
+nano ~/.screenrc
+```
 
 ### Installing biotools
-```mothership:~ mbaughn$ pip install biotools
+```
+mothership:~ mbaughn$ pip install biotools
 Collecting biotools
   Downloading biotools-1.2.12.tar.gz
 Building wheels for collected packages: biotools
