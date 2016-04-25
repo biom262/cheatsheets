@@ -38,7 +38,8 @@ This is a cheat sheet for "Bourne-again shell" (bash) and GNU/Linux commands.
 	git checkout --ours		use everything that is yours when you merge
 	git checkout --theirs		use everything that is theirs when you merge
 	
-	Mac-Only: hdiutil attach /path	Mount a disk image via command line
+	Mac-Only: 
+	hdiutil attach /path	Mount a disk image via command line
 	hdiutil info			Tell me about mounted disk images
 	hdiutil detach /dev/disk1s2	detach image at specified location if you don't know it, use the info command^
 	
