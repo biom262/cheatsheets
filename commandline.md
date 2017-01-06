@@ -2,6 +2,14 @@
 
 This is a cheat sheet for "Bourne-again shell" (bash) and GNU/Linux commands.
 
+# header 1
+## header 2
+### header 3
+#### header 4
+##### header 5
+###### header 6
+
+
 ## Text maninpulation
 
 ### Skip the first line of a file
@@ -92,3 +100,6 @@ To install a program from source on a shared cluster, you will often need to spe
 ./configure --prefix=/projects/ps-yeolab/software
 make && make install   # "make install" will run only if "make" is successful
 ```
+### Other Stuff
+I don't know any other things
+
