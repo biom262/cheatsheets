@@ -70,6 +70,11 @@ when you submit to qsub, you are assigned a host machine based on your request (
 
 If you disconnect from the login node while writing to Scratch, it cuts off whatever you are currently writing and leaves a corrupted file.  USING THE HEAD NODE IS RISKY. If they want to install an update and bring down your login node, you're boned. If you've submitted your stuff as a job you are far more protected.
 
+To load pre-installed software on TSCC (biotools, etc https://www.sdsc.edu/support/user_guides/tscc-quick-start.html#applications) use the command:
+'''
+module load biotools
+'''
+
 
 ## Text maninpulation
 ### Navgiation 
